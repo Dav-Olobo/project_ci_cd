@@ -17,6 +17,6 @@ class CalculatorTest extends TestCase
     {
         $calculator = new Calculator();
 
-        $this->assertEquals(2, $calculator->subtract(5, 3));
+        $this->assertEquals(2, $calculator->subtract(6, 4));
     }
 }
