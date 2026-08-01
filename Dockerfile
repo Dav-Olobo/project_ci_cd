@@ -1,14 +1,23 @@
-FROM php:8.3-cli
+# Stage 1: Install Composer dependencies
+FROM composer:2 AS vendor
 
-WORKDIR /var/www/html
+WORKDIR /app
+
+COPY composer.json composer.lock ./
+
+RUN composer install \
+    --no-dev \
+    --optimize-autoloader \
+    --no-interaction
 
 COPY . .
 
-RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
-    && php composer-setup.php --install-dir=/usr/local/bin --filename=composer \
-    && php -r "unlink('composer-setup.php');"
+# Stage 2: PHP Runtime
+FROM php:8.3-cli
 
-RUN composer install --no-dev --optimize-autoloader
+WORKDIR /app
+
+COPY --from=vendor /app /app
 
 EXPOSE 10000
 
