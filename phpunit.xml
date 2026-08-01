@@ -26,7 +26,7 @@
         restrictWarnings="true">
 
         <include>
-            <directory>src</directory>
+            <directory>app</directory>
         </include>
 
     </source>
