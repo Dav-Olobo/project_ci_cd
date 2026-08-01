@@ -9,3 +9,6 @@ echo "5 + 10 = " . $calculator->add(5, 10);
 
 echo "<br>";
 echo "5 - 10 = " . $calculator->subtract(5, 10);
+
+echo "<br>";
+echo "<h3>CI/CD Pipeline Successful!</h3>";
