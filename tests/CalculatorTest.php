@@ -6,14 +6,14 @@ require_once __DIR__ . '/../app/Calculator.php';
 
 class CalculatorTest extends TestCase
 {
-    public function testAdd()
+    public function testAdd(): void
     {
         $calculator = new Calculator();
 
         $this->assertEquals(10, $calculator->add(4, 6));
     }
 
-    public function testSubtract()
+    public function testSubtract(): void
     {
         $calculator = new Calculator();
 
