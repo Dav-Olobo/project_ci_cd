@@ -1080,3 +1080,145 @@ body.dark footer{
     transform:translateY(0);
 
 }
+
+/* ==========================
+   CONTACT PAGE
+========================== */
+
+.contact-page{
+
+    max-width:900px;
+
+    margin:80px auto;
+
+    padding:0 20px;
+
+}
+
+.contact-header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.contact-header h1{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.contact-header p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.contact-form{
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.form-group{
+
+    margin-bottom:30px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.form-group input,
+.form-group textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-family:'Poppins',sans-serif;
+
+    transition:.3s;
+
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+.contact-form button{
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+}
+
+/* ==========================
+   VALIDATION
+========================== */
+
+.error{
+
+    color:#dc2626;
+
+    margin-top:8px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+.success-message{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+    border:1px solid #86efac;
+
+    padding:18px;
+
+    border-radius:10px;
+
+    margin-bottom:30px;
+
+    text-align:center;
+
+    font-weight:600;
+
+}
