@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+$errors = $_SESSION['errors'] ?? [];
+$old = $_SESSION['old'] ?? [];
+$success = $_SESSION['success'] ?? '';
+
+unset($_SESSION['errors']);
+unset($_SESSION['old']);
+unset($_SESSION['success']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,17 +40,7 @@
 </head>
 
 <body>
-<?php
-session_start();
 
-$errors = $_SESSION['errors'] ?? [];
-$old = $_SESSION['old'] ?? [];
-$success = $_SESSION['success'] ?? '';
-
-unset($_SESSION['errors']);
-unset($_SESSION['old']);
-unset($_SESSION['success']);
-?>
 
 <header>
 
